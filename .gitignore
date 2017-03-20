@@ -68,4 +68,8 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 
+### project ###
+
+build/*
+
 # End of https://www.gitignore.io/api/node,visualstudiocode
