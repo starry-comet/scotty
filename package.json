@@ -23,9 +23,9 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
-    "comet-ioc": "^2.0.0",
-    "comet-logger": "^5.0.0",
-    "comet-redis": "^2.0.0",
+    "comet-ioc": "^2.0.2",
+    "comet-logger": "^1.0.4",
+    "comet-redis": "^2.0.2",
     "dockerode-ts": "^0.3.2"
   },
   "files": [
