@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - node
+  - lts/boron
+  - lts/argon
+
+before_deploy:
+  - yarn pack --filename package.tgz
+
+deploy:
+  provider: releases
+  api_key:
+    secure: PFBObbTFaZdADdqBYmdTnOPsIZXqF/dWKg8YkIThj1NKcShAVTWYrp/jTMZCGXN0CxDxt1DyNGuBbmkbbESwPN+LQDlE3AqNYFk0VPTjrbXM6PT5CXpX3ZRriUGg1a0PfoBNYYwmsLhTxNxiLli9OEwFUJ96oWfnjK3Cfc5JRar1EDJysXZfsJmYnDmu00eajiLOpNObXBVzEt+LxieyHIg/KIppO9sPLNTsPxqfFy7P7fZrl8Y2guxn1Wr6irKmzrB7pNJ9RmgDcS4wLnzNkQKP35SVVBZe9Dwi0o4HXWNJeZkkKbA/DOf1zfP7gji/PXE5plpy93mtYItIayObrKNT/7Q3mKN2ICi1LjJSt98ikUom7TiKjF6Pl0sguNWnDvlln+Y+YIvlJjA3VzCP1FB7o4Q8FNn/6WN1ubsIlzar9isepFJcpTJCbJum0Cd0Zwk/GYL21XpuKl5nhP1qzxJPSySc+rna4BdYY1GQuoZHMwtB80SIyxvhcrrWa1HZ15+qVJjZpRKpclelN8/zLxu7Bjrct9q4234gHZksPZZT/2eAUk45l1Of0kVomPSYiksAqNmxOenCD7Pkm66pV2bykhBFnyWVeCR6WC3n9kavSER9dAUi11yu1HJb2p6+OP9b9hJ2i8WqfxaO4UKOhjzO8G7oQROPzPQGciXJyrc=
+
+  file: package.tgz
+  on:
+    repo: starry-comet/scotty
+    tags: true
