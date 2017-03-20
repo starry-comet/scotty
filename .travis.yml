@@ -9,17 +9,6 @@ before_deploy:
   - yarn pack --filename package.tgz
 
 deploy:
-  - provider: npm
-    email: contact@florentin-dubois.fr
-    api_key:
-      secure: OURujRVoMGQMQc3JaX971IewjBTYMYVDHeo8GGWnNLrb2lEmvUP90M97/S4Vh1fiouwZUnJphT3qdv/xR4kbC8YUjpSIdUhYIRheSi4aYG3Va30jzKeHjq8X/lACokdIlsfEqDXcC1wuHC7YOsTYBVP8nJSHg1kpFaOP+/J1679S/FqjaFz08TdbEmQxDkzWH9VHi7T9fH86i2DTJb4Wemdx8bNISgohhTTXxKGM5xsmXW5Ij8k5sqdOcB2Ug9JnFObV89UMsp/t+UPPSszbr6bIrv/UbZROmqZPJN0l3Nj2TgxWsrZR8evZcrol5hO2I8H7oD1BFeN1Tvf1YA9Ecf1cZPhZKmVWS1bb1uethM61Tf5Q9T8O1kZy8Vr7eSxmy0OYSB1rESqX6n2LSqVFt1X6hRmkaBMtOiUlT2SIpYBBVlWaJUh9/pYhKISvzdWHc4NCm/+sdBO/oZxc+f0wraqM8N767KdFgIIhyypQ+wRwvgyi9z95G8hy3JBrGqeRLV9DIHFcNrO3+hFa6EWOonC5Pbc2xFoa/g6qJuTBdU1Vpr8N0SjPv6Ml+/781k41vw7ZdLYZh8Nxxm/lQFAJX69NvLmsarIFDgpzpZgVcDuKxmZZ9bMaTouV96+9V9aDK4+z41ztZTc0XorktH+IJXLKPgsXj36xcS5vFJrVlME=
-
-    skip_cleanup: true
-    file: package.tgz
-    on:
-      repo: starry-comet/scotty
-      tags: true
-
   - provider: releases
     api_key:
       secure: PFBObbTFaZdADdqBYmdTnOPsIZXqF/dWKg8YkIThj1NKcShAVTWYrp/jTMZCGXN0CxDxt1DyNGuBbmkbbESwPN+LQDlE3AqNYFk0VPTjrbXM6PT5CXpX3ZRriUGg1a0PfoBNYYwmsLhTxNxiLli9OEwFUJ96oWfnjK3Cfc5JRar1EDJysXZfsJmYnDmu00eajiLOpNObXBVzEt+LxieyHIg/KIppO9sPLNTsPxqfFy7P7fZrl8Y2guxn1Wr6irKmzrB7pNJ9RmgDcS4wLnzNkQKP35SVVBZe9Dwi0o4HXWNJeZkkKbA/DOf1zfP7gji/PXE5plpy93mtYItIayObrKNT/7Q3mKN2ICi1LjJSt98ikUom7TiKjF6Pl0sguNWnDvlln+Y+YIvlJjA3VzCP1FB7o4Q8FNn/6WN1ubsIlzar9isepFJcpTJCbJum0Cd0Zwk/GYL21XpuKl5nhP1qzxJPSySc+rna4BdYY1GQuoZHMwtB80SIyxvhcrrWa1HZ15+qVJjZpRKpclelN8/zLxu7Bjrct9q4234gHZksPZZT/2eAUk45l1Of0kVomPSYiksAqNmxOenCD7Pkm66pV2bykhBFnyWVeCR6WC3n9kavSER9dAUi11yu1HJb2p6+OP9b9hJ2i8WqfxaO4UKOhjzO8G7oQROPzPQGciXJyrc=
