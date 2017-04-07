@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "comet-ioc": "^2.0.2",
-    "comet-logger": "^1.0.4",
-    "comet-redis": "^2.0.2",
+    "comet-logger": "^1.0.7",
+    "comet-redis": "^2.0.3",
     "dockerode-ts": "^0.3.2"
   },
   "files": [
